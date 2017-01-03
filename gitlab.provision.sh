@@ -8,4 +8,4 @@ chkconfig postfix on
 lokkit -s http -s ssh
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | /bin/bash
 yum install gitlab-ce -y
-#gitlab-ctl reconfigure
+gitlab-ctl reconfigure
