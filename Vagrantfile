@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
           gitlab.vm.box = "box"
 	  gitlab.vm.hostname = "gitlab.test.com"
           gitlab.vm.network :private_network, ip: "192.168.50.10", bridge: "eth0"
-	  gitlab.vm.network "forwarded_port", guest: 8080, host: 8010
+	  gitlab.vm.network "forwarded_port", guest: 80, host: 8010
 	  gitlab.vm.provision "shell",
             path: "gitlab.provision.sh"
   end
