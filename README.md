@@ -1,5 +1,6 @@
 # Vagrant Continious Integration with GitLab
 Vagrant hosts to prototype and experiment with gitlab, ant, jenkins, and git over a network. 
+Redirects to port 8010.
 
 Host Version Contents
 ========
