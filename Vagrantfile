@@ -14,12 +14,4 @@ Vagrant.configure("2") do |config|
             path: "gitlab.provision.sh"
   end
 
-  config.vm.define "remote" do |remote|
-          remote.vm.box = "bmcgonigle/centos68"
-	  remote.vm.hostname = "remote.host.com"
-          remote.vm.network :private_network, ip: "192.168.50.15", bridge: "eth0"
-          remote.vm.network "forwarded_port", guest: 8080, host: 8280
-	  remote.vm.provision "shell",
-            path: "remote.provision.sh"
-  end
 end

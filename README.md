@@ -8,12 +8,8 @@ apache-ant-1.9.7
 jre-1.8.0-openjdk.x86_64  
 Java 8  
 git  
-
-Client Version Contents
-========
-git  
+Omnibus gitlab
 ant
-jenkins2
 
 Comments
 ========
