@@ -1,4 +1,5 @@
 .vagrant
-apache-ant-1.9.7-bin.tar.gz
 apache-ant-fundamentals.zip
 jenkins2
+*.gz
+build.xml
