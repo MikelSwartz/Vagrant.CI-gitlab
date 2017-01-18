@@ -14,4 +14,12 @@ Vagrant.configure("2") do |config|
             path: "gitlab.provision.sh"
   end
 
+  config.vm.define "client" do |client|
+          client.vm.box = "bmcgonigle/centos68"
+	  client.vm.hostname = "client.home"
+          client.vm.network :private_network, ip: "192.168.50.15", bridge: "eth0"
+#	  client.vm.network "forwarded_port", guest: 80, host: 8010
+	  client.vm.provision "shell",
+            path: "client.provision.sh"
+  end
 end
