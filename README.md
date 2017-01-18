@@ -1,5 +1,5 @@
 # Vagrant Continious Integration with GitLab
-Vagrant hosts to prototype and experiment with gitlab, ant, jenkins, and git over a network. 
+Vagrant hosts to prototype and experiment with git, gitlab, gitlab-ci, as well as ant and jenkins if needed over a network. 
 Redirects to port 8010.
 
 Host Version Contents
@@ -9,7 +9,6 @@ jre-1.8.0-openjdk.x86_64
 Java 8  
 git  
 Omnibus gitlab
-ant
 
 Comments
 ========
