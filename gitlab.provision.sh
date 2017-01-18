@@ -34,3 +34,5 @@ ln -s /opt/ant/bin/ant /usr/bin/ant
 echo "127.0.1.1       $(hostname)" >> /etc/hosts
 sed -i "/^external_url*/a ci_external_url 'http://ci.`hostname`'" /etc/gitlab/gitlab.rb
 gitlab-ctl reconfigure
+
+echo "192.168.50.10 gitlab.home" >> /etc/hosts
