@@ -36,3 +36,8 @@ sed -i "/^external_url*/a ci_external_url 'http://ci.`hostname`'" /etc/gitlab/gi
 gitlab-ctl reconfigure
 
 echo "192.168.50.10 gitlab.home" >> /etc/hosts
+
+#Java Install
+yum install -y java-1.8.0-openjdk.x86_64 java-1.8.0-openjdk-devel.x86_64
+JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk.x86_64
+#End Java
