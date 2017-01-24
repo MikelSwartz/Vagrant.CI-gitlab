@@ -41,3 +41,13 @@ echo "192.168.50.10 gitlab.home" >> /etc/hosts
 yum install -y java-1.8.0-openjdk.x86_64 java-1.8.0-openjdk-devel.x86_64
 JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk.x86_64
 #End Java
+
+#Docker
+curl -sSL https://get.docker.com/ | sh
+# For RHEL/CentOS
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash
+/etc/init.d/docker start
+#Add vagrant user to Docker group
+#sudo usermod -aG docker vagrant
+
+yum install gitlab-ci-multi-runner -y
