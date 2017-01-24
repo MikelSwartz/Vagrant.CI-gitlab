@@ -12,8 +12,9 @@ Omnibus gitlab
 
 Comments
 ========
-Why does the "box" box not configure network correctly?
-Why does the "bmcgonigle/centos68" box not port forward correctly? 
+run:
+docker run hello-world
+as root ( sudo su - ) to verify docker is installed on gitlab.home
 
 Reference URL
 ========
